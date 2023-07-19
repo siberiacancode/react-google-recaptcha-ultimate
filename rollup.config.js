@@ -29,16 +29,11 @@ export default [
       }
     ],
     external: Object.keys(pkg.peerDependencies),
-    plugins: [
-      resolve(),
-      commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-      terser()
-    ]
+    plugins: [resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }), terser()]
   },
   {
     input: 'src/index.ts',
-    output: [{ file: 'dist/types.d.ts', format: 'es' }],
+    output: [{ file: 'dist/index.d.ts', format: 'es' }],
     plugins: [dts.default()]
   }
 ];
