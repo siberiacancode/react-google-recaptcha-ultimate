@@ -2,7 +2,7 @@ import type { GoogleReCaptcha } from '../types';
 
 interface GenerateGoogleReCaptchaSrcParams {
   host?: GoogleReCaptcha.Host;
-  isEnterprise: boolean;
+  isEnterprise?: boolean;
   render: string;
   hl?: string;
   badge?: Exclude<GoogleReCaptcha.Badge, 'hidden'>;
@@ -18,7 +18,7 @@ interface GenerateGoogleReCaptchaSrcParams {
 
 export const generateGoogleReCaptchaScriptSrc = ({
   host = 'google.com',
-  isEnterprise,
+  isEnterprise = false,
   render,
   hl,
   badge
