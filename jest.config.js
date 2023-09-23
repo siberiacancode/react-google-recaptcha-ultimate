@@ -1,10 +1,11 @@
+const { jest } = require('@siberiacancode/jest');
+
 /** @type {import('ts-jest').JestConfigWithTsJest} */
-module.exports = {
-  rootDir: './',
+const jestConfig = {
+  ...jest,
   clearMocks: true,
-  collectCoverage: true,
   testEnvironment: 'jsdom',
-  coverageDirectory: 'coverage',
-  testMatch: ['**/?(*.)test.ts?(x)'],
   setupFilesAfterEnv: ['<rootDir>/setupTests.js']
 };
+
+module.exports = jestConfig;

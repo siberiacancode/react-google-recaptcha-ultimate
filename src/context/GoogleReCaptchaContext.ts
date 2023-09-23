@@ -1,6 +1,6 @@
 import { createContext } from 'react';
 
-import type { GoogleReCaptcha, Container } from '../utils';
+import type { Container, GoogleReCaptcha } from '../utils';
 
 export interface GoogleReCaptchaContextProps {
   googleReCaptcha: any;

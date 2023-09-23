@@ -16,7 +16,8 @@
     "newLine": "lf",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "types": ["@testing-library/jest-dom"]
   },
   "exclude": ["dist", "node_modules"]
 }
