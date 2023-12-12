@@ -10,7 +10,7 @@ export interface GoogleReCaptchaCheckboxProps extends Omit<ComponentProps<'div'>
   action?: string;
   className?: string;
   container?: ContainerId | HTMLElement;
-  callback?: () => void;
+  callback?: (token: string) => void;
   errorCallback?: () => void;
   expiredCallback?: () => void;
   language?: GoogleReCaptcha.Language;

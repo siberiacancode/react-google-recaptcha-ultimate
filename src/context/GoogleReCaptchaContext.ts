@@ -18,35 +18,28 @@ export interface GoogleReCaptchaContextProps {
   ) => void;
 }
 
+const contextError =
+  'GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider';
+
 export const GoogleReCaptchaContext = createContext<GoogleReCaptchaContextProps>({
   googleReCaptcha: {},
   siteKey: '',
   language: '',
   isLoading: true,
   executeV3: () => {
-    throw Error(
-      'GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider'
-    );
+    throw Error(contextError);
   },
   executeV2Invisible: () => {
-    throw Error(
-      'GoogleReCaptchaContext has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider'
-    );
+    throw Error(contextError);
   },
   reset: () => {
-    throw Error(
-      'GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider'
-    );
+    throw Error(contextError);
   },
   getResponse: () => {
-    throw Error(
-      'GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider'
-    );
+    throw Error(contextError);
   },
   render: () => {
-    throw Error(
-      'GoogleReCaptcha Context has not yet been implemented, if you are using useGoogleReCaptcha hook, make sure the hook is called inside component wrapped by GoogleRecaptchaProvider'
-    );
+    throw Error(contextError);
   }
 });
 

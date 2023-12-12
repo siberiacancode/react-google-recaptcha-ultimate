@@ -7,7 +7,7 @@ export interface WithGoogleReCaptchaParams {
   googleReCaptcha: GoogleReCaptchaContextProps;
 }
 
-export const withGoogleReCaptcha = <OwnProps extends unknown>(
+export const withGoogleReCaptcha = <OwnProps,>(
   Component: React.ComponentType<OwnProps & WithGoogleReCaptchaParams>
 ) => {
   const WithGoogleReCaptchaComponent = (props: OwnProps & Partial<WithGoogleReCaptchaParams>) => (
