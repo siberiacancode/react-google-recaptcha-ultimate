@@ -1,13 +1,13 @@
 import React from 'react';
 
-import type { GoogleReCaptcha, ContainerId } from '../utils';
+import type { ContainerId, GoogleReCaptcha } from '../utils';
 import {
-  removeGoogleReCaptchaScript,
-  injectGoogleReCaptchaScript,
+  checkGoogleReCaptchaInjected,
   hideGoogleReCaptchaBadge,
-  removeGoogleReCaptchaContainer,
+  injectGoogleReCaptchaScript,
   removeGoogleReCaptchaBadge,
-  checkGoogleReCaptchaInjected
+  removeGoogleReCaptchaContainer,
+  removeGoogleReCaptchaScript
 } from '../utils';
 
 import { GoogleReCaptchaContextProvider } from './GoogleReCaptchaContext';
