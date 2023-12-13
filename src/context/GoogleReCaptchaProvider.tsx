@@ -27,7 +27,7 @@ interface Explicit {
   container?: ContainerId | HTMLElement;
   tabIndex?: number;
   inherit?: boolean;
-  callback?: () => void;
+  callback?: (token: string) => void;
   errorCallback?: () => void;
   expiredCallback?: () => void;
 }
